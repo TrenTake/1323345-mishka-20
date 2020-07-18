@@ -9,13 +9,13 @@
   <body class="page__body">
     <header class="page-header">
       <a href="index.html" class="page-header__logo" aria-label="Логотип магазина MISHKA">
-        <img src="/source/img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
+        <img src="/img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия меню">
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="menu__box">
+        <div class="menu main-nav__wrapper">
+          <ul class="menu__list">
             <li>
               <a class="menu__item" aria-label="Ссылка на каталог товаров">Каталог товаров</a>
             </li>
@@ -32,57 +32,59 @@
         </div>
       </nav>
     </header>
-    <main class="page-main__catalog">
-      <h1>Каталог товаров</h1>
+    <main class="page-main">
+      <h1 class="headline">Каталог товаров</h1>
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог с товарами</h2>
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <img src="/source/img/toy.jpg" class="item__picture--toy" width="260" height="195" alt="игрушка Зайчик-попрыгайчик">
-            <h2 class="item__name--toy">Зайчик-попрыгайчик</h2>
-            <p class="item__parameters--toy">Рост 30 см, вес 200 г</p>
-            <p class="item__price--toy">1 200 руб.</p>
+          <li class="catalog__item item">
+            <a href="#">
+              <img src="/img/toy.jpg" class="item__picture_toy" width="260" height="195" alt="игрушка Зайчик-попрыгайчик">
+              <h2 class="item__name_toy">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="item__parameters_toy">Рост 30 см, вес 200 г</p>
+            <p class="item__price_toy">1 200 руб.</p>
           </li>
-          <li class="catalog__item">
-            <img src="/source/img/basket.jpg" class="item__picture--basket" width="260" height="195" alt="Корзинка для белья">
-            <h2 class="item__name--basket">Корзинка для белья</h2>
-            <p class="item__parameters--basket">Диаметр 15 см, высота 10 см</p>
-            <p class="item__price--basket">690 руб.</p>
+          <li class="catalog__item item">
+            <a href="#">
+              <img src="/img/basket.jpg" class="item__picture_basket" width="260" height="195" alt="Корзинка для белья">
+              <h2 class="item__name_basket">Корзинка для белья</h2>
+            </a>
+            <p class="item__parameters_basket">Диаметр 15 см, высота 10 см</p>
+            <p class="item__price_basket">690 руб.</p>
           </li>
-          <li class="catalog__item">
-            <img src="/source/img/big-basket.jpg" class="item__picture--basket" width="260" height="195" alt="Большая корзинка для игрушек">
-            <h2 class="item__name--big-basket">Большая корзинка для игрушек</h2>
-            <p class="item__parameters--big-basket">Диаметр 30 см, высота 30 см</p>
-            <p class="item__price--big-basket">1 500 руб.</p>
+          <li class="catalog__item item">
+            <a href="#">
+              <img src="/img/big-basket.jpg" class="item__picture_basket" width="260" height="195" alt="Большая корзинка для игрушек">
+              <h2 class="item__name_big-basket">Большая корзинка для игрушек</h2>
+            </a>
+            <p class="item__parameters_big-basket">Диаметр 30 см, высота 30 см</p>
+            <p class="item__price_big-basket">1 500 руб.</p>
           </li>
           <li class="catalog__prodaction">
             <h2>Процесс производства</h2>
             <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видно о том, как появляются наши товары.</p>
-            <video controls poster="/source/img/video-poster.jpg" width="260" height="195" preload="none">
+            <video controls poster="/img/video-poster.jpg" width="260" height="195" preload="none">
               <source src="#" type="video/mp4">
             </video>
-            <a class="reviews__write button" href="form.html" aria-label="Ссылка для заказа">Сделать заказ</a>
+            <a class="catalog__write button" href="form.html" aria-label="Ссылка для заказа">Сделать заказ</a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#" aria-label="instagram">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="facebook">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#" aria-label="twitter">
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link_instagram" href="#" aria-label="instagram"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_facebook" href="#" aria-label="facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_twitter" href="#" aria-label="twitter"></a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTML Academy">HTML Academy</a>
