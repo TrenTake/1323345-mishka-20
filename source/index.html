@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="description" content="Магазин милых штук ручной работы Mishka">
+    <meta name="keywords" content="вещи, детские игрушки, предметы интерьера, вязаные корзинки, экологические материалы">
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" aria-label="Логотип магазина MISHKA">
+        <img class="page-header__img" src="/img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия меню">
+        </button>
+        <ul class="menu">
+          <li class="menu__list">
+            <a class="menu__item" href="catalog.html" aria-label="Ссылка на каталог товаров">Каталог товаров</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__item" href="form.html" aria-label="Ссылка на заказ">Вязание на заказ</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__item" href="#" aria-label="Ссылка на поиск по сайту">Поиск по сайту</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__item" href="#" aria-label="Ссылка на корзину">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="headline">Милые штуки ручной работы для дома</h1>
+      <section class="products">
+        <a href="#" class="products--items" aria-label="Предметы интерьера">Предметы интерьера</a>
+        <a href="#" class="products--toys" aria-label="Детские игрушки">Детские игрушки</a>
+        <h2 class="products__name">Вязаные корзинки</h2>
+        <h3 class="products__popular">Товар недели</h3>
+        <p class="products__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="products__parameters">
+          <tr class="products__column">
+           <td class="products__row">Цвет:</td>
+           <td class="products__row">&laquo;Тиффани&raquo;/серый</td>
+          </tr>
+          <tr class="products__column">
+            <td class="products__row">Диаметр:</td>
+            <td class="products__row">25 см</td>
+           </tr>
+           <tr class="products__column">
+            <td class="products__row">Высота:</td>
+            <td class="products__row">15 см</td>
+           </tr>
+         </table>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__description">Коротко о нас</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--eco">
+            <h3 class="advantages__title">Экологически чистые материалы</h3>
+          </li>
+          <li class="advantages__item advantages__item--style">
+            <h3 class="advantages__title">Скандинавский стиль по российской цене</h3>
+          </li>
+          <li class="advantages__item advantages__item--likes">
+            <h3 class="advantages__title">Увеличивает лайки на фотографиях</h3>
+          </li>
+          <li class="advantages__item advantages__item--love">
+            <h3 class="advantages__title">Связано вручную с любовью и умилением</h3>
+          </li>
+          <li class="advantages__item advantages__item--support">
+            <h3 class="advantages__title">Поддержка отечественного производителя</h3>
+          </li>
+          <li class="advantages__item advantages__item--present">
+            <h3 class="advantages__title">Поставляется в подарочной упаковке</h3>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="slider__title">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="slider__item">
+              <div class="slider__author-info">
+                <p class="slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                  как у популярных мамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+                  стильными, а также набирают больше лайков!
+                </p>
+                <cite class="slider__author-name">Анастасия Красильникова</cite>
+                <p class="slider__author-pseudonym">@misssssiskras</p>
+              </div>
+            </blockquote>
+          </div>
+          <p class="slider__toggles">
+            <button class="slider__prev" type="button" aria-label="Кнопка перехода на предыдущий отзыв"></button>
+            <button class="slider__next" type="button" aria-label="Кнопка перехода на следующий отзыв"></button>
+          </p>
+          <a class="slider__write button" href="form.html" aria-label="Ссылка для написания собственного отзыва">Написать</a>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="page-main__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__text">email:</p>
+          <a class="contacts__text" href="mailto:info@mimimishkashop.ru?subject=МагазинMishka">info@mimimishkashop.ru</a>
+          <p class="contacts__text">Адрес:</p>
+          <p class="contacts__text">
+            г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+          </p>
+          <div class="contacts__map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000686667537!2d30.321008015971533!3d59.93877818187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sil!4v1595007236187!5m2!1sru!2sil"
+            width="322" height="457" allowfullscreen title="Магазин ручных работ для дома Mishka" class="contacts__map--live" aria-hidden="false" tabindex="0">
+            </iframe>
+          </div>
+          <a class="contacts__write button" href="form.html" aria-label="Ссылка для связи">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#" aria-label="instagram"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="twitter"></a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTML Academy">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
