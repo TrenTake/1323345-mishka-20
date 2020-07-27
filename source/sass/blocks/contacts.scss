@@ -1,0 +1,20 @@
+.contacts__title {
+  color: $black;
+  line-height: $text-mobile-line-height;
+  font-size: 18px;
+  font-weight: $bold;
+}
+
+.contacts__text {
+  line-height: $text-mobile-line-height;
+  color: $text-black;
+  text-decoration: solid;
+  text-decoration-color: $line-color;
+}
+
+.contacts__write {
+  padding-left: 37px;
+  padding-right: 38px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,33 @@
+.products__name {
+  font-size: $title-mobile-font-size;
+  line-height: $text-mobile-line-height;
+  font-weight: $bold;
+}
+
+.products__popular {
+  font-size: $text-mobile-font-size;
+  line-height: 20px;
+  color: $light-blue;
+}
+
+.products__description {
+  line-height: $basic-mobile-line-height;
+}
+
+.products__parameters {
+  line-height: 20px;
+}
+
+.products__price {
+  font-weight: $bold;
+  font-size: $text-mobile-font-size;
+  line-height: $basic-mobile-line-height;
+}
+
+.products__order {
+  font-size: $text-mobile-font-size;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,18 @@
+.item__name {
+  color: $black;
+  font-size: $text-mobile-font-size;
+  line-height: $basic-mobile-line-height;
+  font-weight: $bold;
+}
+
+.item__parameters {
+  font-size: 13px;
+  line-height: $text-mobile-line-height;
+}
+
+.item__price {
+  font-weight: $bold;
+  color: $black;
+  line-height: $basic-mobile-line-height;
+  font-size: $basic-mobile-font-size;
+}
