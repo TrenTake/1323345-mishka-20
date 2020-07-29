@@ -6,7 +6,7 @@
   font-size: $text-mobile-font-size;
   line-height: $basic-mobile-line-height;
   font-weight: $bold;
-  list-style: $none;
+  @include list-reset;
 }
 
 .main-nav__icon {

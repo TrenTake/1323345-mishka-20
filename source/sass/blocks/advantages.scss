@@ -10,7 +10,6 @@
   font-weight: $bold;
   color: $black;
 }
-
 .advantages__list {
-  list-style: $none;
+  @include list-reset;
 }

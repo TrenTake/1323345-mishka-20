@@ -1,6 +1,6 @@
 @import "global.scss";
-@import "mixin.scss";
-@import "var.scss";
+@import "mixins.scss";
+@import "variables.scss";
 @import "blocks/page.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/categories.scss";
@@ -17,5 +17,5 @@
 @import "blocks/modal.scss";
 @import "blocks/catalog.scss";
 @import "blocks/item.scss";
-@import "blocks/social.scss";
 @import "blocks/banner.scss";
+@import "blocks/social.scss";

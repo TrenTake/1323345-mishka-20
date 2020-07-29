@@ -1,7 +1,7 @@
 .form__text {
   font-size: 13px;
   line-height: $basic-mobile-line-height;
-  border: $none;
+  border: none;
 }
 
 .form__field {
@@ -32,10 +32,10 @@
   line-height: 16px;
 }
 
-.form__list {
-  list-style: $none;
+.form__fieldset {
+  border: none;
 }
 
-.form__fieldset {
-  border: $none;
+.form__list {
+  @include list-reset;
 }

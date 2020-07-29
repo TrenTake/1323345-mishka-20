@@ -9,7 +9,6 @@
   padding-top: 18px;
   padding-right: 11px;
 }
-
 .catalog__list {
-  list-style: $none;
+  @include list-reset;
 }

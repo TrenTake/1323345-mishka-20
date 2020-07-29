@@ -16,9 +16,9 @@
 }
 
 .modal__list {
-  list-style: $none;
+  @include list-reset;
 }
 
 .modal__fieldset {
-  border: $none;
+  border: none;
 }

@@ -14,9 +14,9 @@
         <img class="page-header__img" src="/img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
       </a>
       <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия меню"></button>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav--active">
             <a class="main-nav__link" href="catalog.html" aria-label="Ссылка на каталог товаров">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
@@ -46,28 +46,26 @@
         <a href="#" class="categories__link categories__link--toys" aria-label="Детские игрушки">Детские игрушки</a>
       </div>
       <section class="products">
-        <div>
-          <h2 class="products__name">Вязаные корзинки</h2>
-          <h3 class="products__popular">Товар недели</h3>
-          <p class="products__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="products__parameters">
-            <tr class="products__column">
-            <td class="products__row">Цвет:</td>
-            <td class="products__row">&laquo;Тиффани&raquo;/серый</td>
-            </tr>
-            <tr class="products__column">
-              <td class="products__row">Диаметр:</td>
-              <td class="products__row">25 см</td>
-            </tr>
-            <tr class="products__column">
-              <td class="products__row">Высота:</td>
-              <td class="products__row">15 см</td>
-            </tr>
-          </table>
-          <img class="products__image" src="/img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото трёх вязанных корзинок">
-          <p class="products__price">Цена: 990 руб.</p>
-          <a class="products__order button" href="form.html" aria-label="Ссылка для заказа">Заказать</a>
-        </div>
+        <h2 class="products__name">Вязаные корзинки</h2>
+        <h3 class="products__popular">Товар недели</h3>
+        <p class="products__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="products__parameters">
+          <tr class="products__column">
+          <td class="products__row">Цвет:</td>
+          <td class="products__row">&laquo;Тиффани&raquo;/серый</td>
+          </tr>
+          <tr class="products__column">
+            <td class="products__row">Диаметр:</td>
+            <td class="products__row">25 см</td>
+          </tr>
+          <tr class="products__column">
+            <td class="products__row">Высота:</td>
+            <td class="products__row">15 см</td>
+          </tr>
+        </table>
+        <img class="products__image" src="/img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото трёх вязанных корзинок">
+        <p class="products__price">Цена: 990 руб.</p>
+        <a class="products__order button" href="form.html" aria-label="Ссылка для заказа">Заказать</a>
       </section>
       <section class="advantages">
         <h2 class="advantages__description">Коротко о нас</h2>
