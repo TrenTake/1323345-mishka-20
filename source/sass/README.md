@@ -1,11 +1,11 @@
-Папка для файлов препроцессора Less.
+Папка для файлов препроцессора Sass.
 
-http://lesscss.org
+https://sass-lang.com
 
 --
 
 Структура файлов:
 
-less/
-| - style.less
-| - [другие *.less файлы]
+sass/
+| - style.scss
+| - [другие *.scss файлы]
