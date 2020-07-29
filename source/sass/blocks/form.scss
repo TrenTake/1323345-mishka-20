@@ -1,0 +1,41 @@
+.form__text {
+  font-size: 13px;
+  line-height: $basic-mobile-line-height;
+  border: none;
+}
+
+.form__field {
+  color: $light-blue;
+  font-weight: $bold;
+  font-size: $text-mobile-font-size;
+  line-height: 16px;
+}
+
+.form__label {
+  color: $black;
+  font-weight: $bold;
+  font-size: $text-mobile-font-size;
+  line-height: 18px;
+}
+
+.form__send {
+  padding-left: 33px;
+  padding-right: 31px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.form__necessarily {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__list {
+  @include list-reset;
+}

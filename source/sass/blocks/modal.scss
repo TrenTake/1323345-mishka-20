@@ -1,0 +1,24 @@
+.modal__name {
+  font-weight: $bold;
+  font-size: $title-mobile-font-size;
+  line-height: $text-mobile-line-height;
+  color: $black;
+}
+
+.modal__text {
+  line-height: $text-mobile-line-height;
+}
+
+.modal__label {
+  font-weight: $bold;
+  font-size: $text-mobile-font-size;
+  line-height: 16px;
+}
+
+.modal__list {
+  @include list-reset;
+}
+
+.modal__fieldset {
+  border: none;
+}

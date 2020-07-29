@@ -1,0 +1,30 @@
+.categories__link {
+  color: $white;
+  font-size: 19px;
+  line-height: $basic-mobile-line-height;
+  font-weight: $bold;
+  padding-top: $basic-mobile-line-height;
+  padding-bottom: 31px;
+  padding-left: 30px;
+  padding-left: 30px;
+
+  &--toys {
+    background-color: $dark-blue;
+  }
+
+  &--items {
+    background-color: $light-blue;
+  }
+}
+
+.categories__icon {
+  opacity: 50%;
+
+  &--interior {
+    margin-left: 84px;
+  }
+
+  &--toy {
+    margin-left: 73px;
+  }
+}

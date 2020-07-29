@@ -1,0 +1,26 @@
+.slider__title {
+  font-size: $title-mobile-font-size;
+  color: $black;
+  font-weight: $bold;
+  line-height: $text-mobile-line-height;
+}
+
+.slider__text {
+  line-height: $text-mobile-line-height;
+}
+
+.slider__author-name {
+  font-weight: $bold;
+  font-size: $text-mobile-font-size;
+  line-height: $basic-mobile-line-height;
+  color: $black;
+  font-style: normal;
+}
+
+.slider__write {
+  font-size: 18px;
+  padding-left: 66px;
+  padding-right: 65px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
