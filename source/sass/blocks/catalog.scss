@@ -12,3 +12,7 @@
 .catalog__list {
   @include list-reset;
 }
+
+.catalog__hidden {
+  @include visually-hidden;
+}

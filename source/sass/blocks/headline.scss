@@ -1,6 +1,20 @@
 .headline {
-  font-size: $headline-mobile-font-size;
+  font-size: $title-mobile-font-size;
   line-height: $text-mobile-line-height;
   font-weight: $bold;
   color: $black;
+}
+
+@media(min-width: $tablet-width) {
+  .headline {
+    font-size: $title-tablet-font-size;
+    line-height: $title-tablet-line-height;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .headline {
+    font-size: $title-desktop-font-size;
+    line-height: $title-desktop-line-height;
+  }
 }

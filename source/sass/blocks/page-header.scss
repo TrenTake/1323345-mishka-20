@@ -1,24 +1,25 @@
 .page-header__img-mobile {
-  margin-left: 116px;
+  margin-left: 89px;
+  padding-bottom: 17px;
 }
 
 .page-header {
   display: flex;
   flex-direction: column;
   position: relative;
+  @include container;
 }
 
 .page-header__logo-mobile {
   min-height: 44px;
   padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .page-header__toggle {
   background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 30px;
+  top: 32px;
   right: 30px;
   z-index: 2;
   display: block;
@@ -44,6 +45,8 @@
   .page-header {
     display: flex;
     flex-direction: row;
+    background: linear-gradient(to bottom, #ffffff 88px, #e0e0e0 88px, #e0e0e0 89px, #f9f9f9 89px);
+    margin: 0;
   }
 
   .page-header__logo-mobile {

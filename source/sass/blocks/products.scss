@@ -2,32 +2,167 @@
   font-size: $title-mobile-font-size;
   line-height: $text-mobile-line-height;
   font-weight: $bold;
+  color: $black;
+  margin-top: 34px;
+  margin-left: 3px;
+  margin-bottom: 0;
 }
 
 .products__popular {
   font-size: $text-mobile-font-size;
   line-height: 20px;
   color: $light-blue;
+  margin-top: 3px;
+  margin-left: 2px;
+  text-transform: uppercase;
 }
 
 .products__description {
   line-height: $basic-mobile-line-height;
+  padding-left: 2px;
+  padding-bottom: 26px;
+  margin: 0;
 }
 
 .products__parameters {
   line-height: 20px;
+  padding-bottom: 21px;
 }
 
 .products__price {
   font-weight: $bold;
   font-size: $text-mobile-font-size;
   line-height: $basic-mobile-line-height;
+  text-align: center;
+  padding-left: 3px;
+  padding-top: 5px;
+  padding-bottom: 23px;
 }
 
 .products__order {
   font-size: $text-mobile-font-size;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-left: 85px;
+  padding-right: 84px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.products {
+  @include container;
+  min-height: 820px;
+}
+
+.products::after {
+  background-image: url("../img/bg-zigzag-line.svg");
+  content: "";
+  display: block;
+  min-width: 320px;
+  height: 6px;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+}
+
+.products__row {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 17px;
+
+  &--parameters {
+    padding-right: 27px;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .products__name {
+    margin: 0;
+    }
+
+  .products__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .products__best {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .products__popular {
+    line-height: 17px;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .products__description {
+    font-size: $text-mobile-font-size;
+    line-height: $text-mobile-line-height;
+    width: 292px;
+  }
+
+  .products__best {
+    margin-top: 20px;
+  }
+
+  .products__parameters {
+    width: 256px;
+  }
+
+  .products__image {
+    position: absolute;
+    bottom: 5px;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: $gray;
+  }
+
+  .products__price {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    text-align: start;
+  }
+
+  .products__order {
+    font-size: $text-mobile-font-size;
+    width: 292px;
+    padding: 0;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 525px;
+    height: 636px;
+  }
+
+  .products__name {
+    order: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 150px;
+  }
+
+  .products__popular {
+    order: -1;
+  }
+
+  .products {
+    padding-top: 71px;
+  }
+
+  .products::after {
+    background-size: auto;
+    min-width: 1050px;
+    height: 23px;
+  }
 }

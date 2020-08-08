@@ -1,3 +1,34 @@
 .social {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-left: 30px;
+}
+
+.social__link::before {
+  content: "";
+  display: block;
+  background-color: $gray;
+}
+
+.social__link--instagram::before {
+  width: 22px;
+  height: 21px;
+  background-image: url("../img/icon-insta.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--facebook::before {
+  width: 15px;
+  height: 28px;
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--twitter::before {
+  width: 23px;
+  height: 20px;
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
 }
