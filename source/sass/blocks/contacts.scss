@@ -24,7 +24,7 @@
   margin-left: 45px;
 }
 
-.contacts__hidden {
+.visually-hidden {
   @include visually-hidden;
 }
 
@@ -87,13 +87,12 @@
     flex-direction: column;
   }
 
-  .contacts__info--email {
+  .contacts__information {
     display: flex;
-    padding-bottom: 25px;
   }
 
-  .contacts__info--address {
-    display: flex;
+  .contacts__information--email {
+    padding-bottom: 25px;
   }
 
   .contacts__text {

@@ -42,33 +42,27 @@
     order: 2;
   }
 
-  .slider__toggles {
+  .slider__toggle {
     order: 3;
-  }
-
-  .slider--arrow {
     border: none;
   }
 
-  .slider--arrow::before {
+  .slider__toggle::before {
     content: "";
     display: block;
     width: 50px;
     height: 26px;
-    background-image: url("../img/icon-left-arrow.svg");
     position: absolute;
     bottom: 66px;
+  }
+
+  .slider__toggle--prev::before {
+    background-image: url("../img/icon-left-arrow.svg");
     right: 85px;
   }
 
-  .slider--arrow::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 26px;
+  .slider__toggle--next::before {
     background-image: url("../img/icon-right-arrow.svg");
-    position: absolute;
-    bottom: 66px;
     right: 0;
   }
 }

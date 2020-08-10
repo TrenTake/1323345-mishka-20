@@ -1,5 +1,6 @@
 .categories__link {
   display: flex;
+  position: relative;
 
   &--toys {
     background-color: $dark-blue;
@@ -19,10 +20,6 @@
   line-height: $basic-mobile-line-height;
   font-weight: $bold;
   margin: 0;
-}
-
-.categories__container {
-  position: relative;
 }
 
 .categories__link::after {
@@ -91,6 +88,7 @@
   }
 
   .categories__link--toys::after {
-    left: 430px;
+    right: 75px;
+    left: auto;
   }
 }
