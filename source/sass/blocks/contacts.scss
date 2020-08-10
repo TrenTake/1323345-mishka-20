@@ -3,6 +3,7 @@
   line-height: $text-mobile-line-height;
   font-size: 18px;
   font-weight: $bold;
+
   @include container;
 }
 
@@ -11,6 +12,7 @@
   color: $text-black;
   text-decoration: solid;
   text-decoration-color: $line-color;
+
   @include container;
 }
 
@@ -49,7 +51,7 @@
     display: block;
     width: 47px;
     height: 80px;
-    background-image: url(../img/icon-flag.svg);
+    background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -85,13 +87,12 @@
     flex-direction: column;
   }
 
-  .contacts__email {
+  .contacts__info--email {
     display: flex;
     padding-bottom: 25px;
-
   }
 
-  .contacts__address {
+  .contacts__info--address {
     display: flex;
   }
 

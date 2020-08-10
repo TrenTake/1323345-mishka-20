@@ -18,6 +18,15 @@
 
 .main-nav__link {
   color: $black;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: $bold;
+  font-size: $text-mobile-font-size;
+  line-height: $basic-mobile-line-height;
+  padding-left: 48px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid $border-color;
 }
 
 .main-nav__item--tablet {
@@ -42,6 +51,7 @@
   font-size: $text-mobile-font-size;
   line-height: $basic-mobile-line-height;
   font-weight: $bold;
+
   @include list-reset;
 }
 
@@ -56,30 +66,18 @@
   opacity: 1;
 }
 
-.main-nav__link--icon:hover .main-nav__icon {
+.main-nav__link--icon:active .main-nav__icon {
   fill: $light-blue;
   opacity: 0.3;
 }
 
-.main-nav .main-nav__link {
-  display: flex;
-  justify-content: flex-start;
-  font-weight: $bold;
-  font-size: $text-mobile-font-size;
-  line-height: $basic-mobile-line-height;
-  padding-left: 48px;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid $border-color;
-}
-
-.main-nav .main-nav__link--icon {
+.main-nav__link--icon {
   padding-left: 3px;
   padding-bottom: 25px;
   padding-top: 25px;
 }
 
-.main-nav .main-nav__link--catalog {
+.main-nav__link--catalog {
   border-top: 1px solid $border-color;
 }
 
@@ -87,7 +85,7 @@
   opacity: 0.6;
 }
 
-.main-nav .main-nav__link:active {
+.main-nav__link:active {
   opacity: 0.3;
 }
 
@@ -131,6 +129,8 @@
 
   .main-nav__item--search {
     order: 0;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
   }
 
   .main-nav__item--basket {
@@ -164,11 +164,6 @@
     display: none;
   }
 
-  .main-nav__item--search {
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
-  }
-
   .main-nav__link--icon {
     padding-left: 33px;
     padding-right: 31px;
@@ -194,13 +189,16 @@
   .main-nav {
     width: 1150px;
   }
+
   .main-nav__item--new {
     display: block;
+    order: 4;
   }
 
   .main-nav__item--sale {
     display: block;
     margin-right: auto;
+    order: 5;
   }
 
   .main-nav__item--catalog {
@@ -224,14 +222,6 @@
 
   .main-nav__item--basket {
     order: 3;
-  }
-
-  .main-nav__item--new {
-    order: 4;
-  }
-
-  .main-nav__item--sale {
-    order: 5;
   }
 
   .main-nav__item--tablet {

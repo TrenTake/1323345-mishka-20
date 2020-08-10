@@ -71,10 +71,10 @@
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .products__name {
     margin: 0;
-    }
+  }
 
   .products__header {
     display: flex;
@@ -83,6 +83,7 @@
   }
 
   .products__best {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -99,10 +100,6 @@
     font-size: $text-mobile-font-size;
     line-height: $text-mobile-line-height;
     width: 292px;
-  }
-
-  .products__best {
-    margin-top: 20px;
   }
 
   .products__parameters {

@@ -5,14 +5,14 @@
   color: $black;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .headline {
     font-size: $title-tablet-font-size;
     line-height: $title-tablet-line-height;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .headline {
     font-size: $title-desktop-font-size;
     line-height: $title-desktop-line-height;
