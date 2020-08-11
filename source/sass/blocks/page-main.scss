@@ -15,3 +15,29 @@
     padding-top: 73px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-gray;
+  }
+
+  .page-main__wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    min-width: 768px;
+    height: 24px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wrapper::after {
+    min-width: 100%;
+  }
+}

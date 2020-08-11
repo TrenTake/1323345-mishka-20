@@ -1,0 +1,32 @@
+.reviews {
+  @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    background-image: none;
+    padding-bottom: 67px;
+    padding-top: 90px;
+  }
+
+  .reviews__wrapper {
+    padding-left: 210px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,21 @@
+.page-footer__wrapper {
+  background-color: $gray;
+  margin-top: 39px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 57px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}

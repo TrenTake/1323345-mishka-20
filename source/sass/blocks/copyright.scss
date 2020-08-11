@@ -3,4 +3,14 @@
   font-weight: $bold;
   font-size: 19px;
   line-height: 18px;
+  padding-right: 27px;
+  padding-left: 69px;
+}
+
+.copyright__wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+  padding-top: 29px;
+  background-color: $gray;
 }
