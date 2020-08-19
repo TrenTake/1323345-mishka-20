@@ -11,48 +11,48 @@
   </head>
   <body class="page__body">
     <header class="page-header page-header--another">
-      <button class="page-header__toggle" type="button" aria-label="Кнопка открытия меню"></button>
       <nav class="main-nav">
-        <ul class="main-nav__logo">
-          <li class="main-nav__item main-nav__item--logo">
-            <a class="page-header__logo" href="index.html" aria-label="Логотип магазина MISHKA">
-              <img class="page-header__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
+        <div class="main-nav__item main-nav__item--logo">
+          <a class="page-header__logo" href="index.html" aria-label="Логотип магазина MISHKA">
+            <img class="page-header__img" src="/img/logo-mobile.svg" width="86" height="35" alt="Логотип MISHKA">
+          </a>
+        </div>
+        <button class="page-header__toggle" type="button" aria-label="Кнопка открытия меню"></button>
+        <ul class="main-nav__list main-nav--nojs main-nav__list--product">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link main-nav__link--first" href="catalog.html" aria-label="Ссылка на каталог товаров">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item main-nav__item--order">
+            <a class="main-nav__link main-nav__link--order" aria-label="Ссылка на заказ">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav--nojs main-nav__list--user">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--icon main-nav__link--search" href="#" aria-label="Ссылка на поиск по сайту">
+              <svg class="main-nav__icon main-nav__icon--search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+              </svg>
+              <p class="main-nav__text">Поиск по сайту</p>
             </a>
           </li>
-          <li>
-            <ul class="main-nav__list main-nav--nojs">
-              <li class="main-nav__item main-nav__item--catalog">
-                <a class="main-nav__link main-nav__link--first" href="catalog.html" aria-label="Ссылка на каталог товаров">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item main-nav__item--order">
-                <a class="main-nav__link main-nav__link--order" aria-label="Ссылка на заказ">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__item main-nav__item--search">
-                <a class="main-nav__link main-nav__link--icon main-nav__link--search" href="#" aria-label="Ссылка на поиск по сайту">
-                  <svg class="main-nav__icon main-nav__icon--search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                    <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
-                  </svg>
-                  <p class="main-nav__text">Поиск по сайту</p>
-                </a>
-              </li>
-              <li class="main-nav__item main-nav__item--basket">
-                <a class="main-nav__link main-nav__link--icon main-nav__link--basket" href="#" aria-label="Ссылка на корзину">
-                  <svg class="main-nav__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
-                    <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-                  </svg>
-                  Корзина: пока пуста
-                </a>
-              </li>
-              <li class="main-nav__item main-nav__item--tablet">
-                <a class="main-nav__link main-nav__link--tablet" href="#" aria-label="Ссылка на бесплатную доставку по России">Бесплатная доставка по России</a>
-              </li>
-              <li class="main-nav__item main-nav__item--new">
-                <a class="main-nav__link main-nav__link--new" href="#" aria-label="Ссылка на новые поступления">Новые поступления</a>
-              </li>
-              <li class="main-nav__item main-nav__item--sale">
-                <a class="main-nav__link main-nav__link--sale" href="#" aria-label="Ссылка на распродажу (товары со скидкой)">Распродажа</a>
-              </li>
-            </ul>
+          <li class="main-nav__item main-nav__item--basket">
+            <a class="main-nav__link main-nav__link--icon main-nav__link--basket" href="#" aria-label="Ссылка на корзину">
+              <svg class="main-nav__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <span class="main-nav__item main-nav__item--tablet">
+          <a class="main-nav__link main-nav__link--tablet" href="#" aria-label="Ссылка на бесплатную доставку по России">Бесплатная доставка по России</a>
+        </span>
+        <ul class="main-nav__list main-nav--nojs main-nav__list--offer">
+          <li class="main-nav__item main-nav__item--new">
+            <a class="main-nav__link main-nav__link--new" href="#" aria-label="Ссылка на новые поступления">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link main-nav__link--sale" href="#" aria-label="Ссылка на распродажу (товары со скидкой)">Распродажа</a>
           </li>
         </ul>
       </nav>
@@ -67,11 +67,11 @@
           <div class="form__container">
           <legend class="form__field">Тип</legend>
             <ul class="form__list">
-              <li class="form__item">
+              <li class="form__item form__item--acces">
                 <input type="radio" name="type" class="form__type" id="accessory" value="accessory" checked>
-                <label class="form__label form__label--radio form__label--radio-checked" for="accessory">Аксессуар для интерьера</label>
+                <label class="form__label form__label--radio" for="accessory">Аксессуар для интерьера</label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--toys">
                 <input type="radio" name="type" class="form__type" id="toy" value="toy">
                 <label class="form__label form__label--radio" for="toy">Детская игрушка</label>
               </li>
@@ -84,11 +84,11 @@
             <ul class="form__list form__wrapper">
               <li class="form__item">
                 <input class="form__type" type="checkbox" name="white" id="white" value="white" checked>
-                <label for="white" class="form__label form__label--checkbox form__label--checkbox-checked">Белый</label>
+                <label for="white" class="form__label form__label--checkbox">Белый</label>
               </li>
               <li class="form__item">
                 <input class="form__type" type="checkbox" name="gray" id="gray" value="gray" checked>
-                <label for="gray" class="form__label form__label--checkbox form__label--checkbox-checked">Серый</label>
+                <label for="gray" class="form__label form__label--checkbox">Серый</label>
               </li>
               <li class="form__item">
                 <input class="form__type" type="checkbox" name="tiffany" id="tiffany" value="tiffany">
@@ -109,9 +109,9 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--name">
           <div class="form__container">
-            <legend class="form__field">ФИО</legend>
+            <legend class="form__field form__field--name">ФИО</legend>
             <ul class="form__list">
               <li class="form__name">
                 <label for="name" class="form__label">Имя:</label>
@@ -133,8 +133,8 @@
           <ul class="form__list">
             <li class="form__contacts">
               <label for="tel" class="form__field">Тел</label>
-              <input class="form__text form__text--name" type="tel" id="tel" name="tel" placeholder="+7 XXX XXX XX XX*" pattern="[0-9]{11}" required>
-              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
+              <input class="form__text form__text--name form__text--name-tel" type="tel" id="tel" name="tel" placeholder="+7 XXX XXX XX XX*" pattern="[0-9]{11}" required>
+              <svg class="form__icon-tel" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
                 <g>
                   <g id="UrwUhy_2_">
                     <g>
@@ -149,11 +149,11 @@
             </li>
             <li class="form__contacts form__contacts--email">
               <label for="email" class="form__field">E-mail</label>
-              <input class="form__text form__text--name" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+              <input class="form__text form__text--name form__text--name-email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
             </li>
-            <li class="form__contacts">
+            <li class="form__contacts form__contacts--add">
               <label for="add" class="form__field">Доп</label>
-              <textarea class="form__text form__text--name" id="add" name="add" rows="3" cols="10"></textarea>
+              <textarea placeholder="Опишите все ваши пожелания к заказу" class="form__text form__text--textarea" id="add" name="add" rows="3" cols="10"></textarea>
             </li>
           </ul>
         </fieldset>
@@ -191,7 +191,7 @@
           <div class="copyright__wrapper">
             <p class="copyright__text">Разработано</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на HTML Academy">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+              <svg class="copyright__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                 <path fill="#63D1BB" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
               </svg>
               </a>

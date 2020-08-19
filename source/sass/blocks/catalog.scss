@@ -57,6 +57,18 @@
   border: none;
 }
 
+.catalog__button::before {
+  content: "";
+  width: 101px;
+  height: 77px;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .catalog__player-img {
   position: absolute;
   top: 35px;
@@ -66,12 +78,6 @@
 @media (min-width: $tablet-width) {
   .catalog__item {
     display: flex;
-  }
-
-  .catalog__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-left: 34px;
   }
 
   .catalog__list {
@@ -112,10 +118,6 @@
   .catalog__item {
     display: block;
     width: 314px;
-  }
-
-  .catalog__wrapper {
-    padding-left: 28px;
   }
 
   .catalog__production {

@@ -5,12 +5,23 @@
   line-height: 18px;
   padding-right: 27px;
   padding-left: 69px;
+  padding-top: 6px;
+}
+
+.copyright__icon {
+  padding-top: 15px;
 }
 
 .copyright__wrapper {
   display: flex;
   align-items: center;
   padding-bottom: 32px;
-  padding-top: 29px;
   background-color: $gray;
+  border-top: 1px solid $border-footer-color;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__wrapper {
+    border-top: none;
+  }
 }
