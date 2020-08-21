@@ -25,3 +25,19 @@
     border-top: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__wrapper {
+    padding-top: 27px;
+    padding-bottom: 20px;
+    padding-right: 71px;
+  }
+
+  .copyright__text {
+    padding-top: 0;
+  }
+
+  .copyright__link {
+    margin-top: 6px;
+  }
+}

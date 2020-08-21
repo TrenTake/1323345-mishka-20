@@ -79,12 +79,19 @@
 @media (min-width: $desktop-width) {
   .contacts__map--live {
     width: 527px;
+    background-size: 527px auto;
     min-height: 457px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .contacts__info {
     flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 174px;
+    padding-top: 37px;
+    padding-bottom: 102px;
   }
 
   .contacts__information {
@@ -92,11 +99,40 @@
   }
 
   .contacts__information--email {
-    padding-bottom: 25px;
+    padding-bottom: 29px;
   }
 
   .contacts__text {
     max-width: 250px;
     padding-right: 0;
+  }
+
+  .contacts__title {
+    font-size: $title-desktop-font-size;
+    line-height: $title-desktop-line-height;
+    padding-left: 224px;
+    padding-top: 149px;
+  }
+
+  .contacts__title::after {
+    top: 133px;
+    left: 112px;
+  }
+
+  .contacts__text--email {
+    padding-left: 25px;
+  }
+
+  .contacts__text--address {
+    padding-left: 26px;
+  }
+
+  .contacts__write {
+    margin-left: 224px;
+    padding-left: 41px;
+    padding-right: 38px;
+    padding-bottom: 12px;
+    padding-top: 13px;
+    font-size: $text-mobile-font-size;
   }
 }

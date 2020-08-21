@@ -66,3 +66,42 @@
     right: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__title {
+    margin: 0;
+    padding-top: 77px;
+    padding-bottom: 36px;
+  }
+
+  .slider__author-pseudonym {
+    margin: 0;
+    font-size: $text-mobile-font-size;
+    padding-top: 5px;
+  }
+
+  .slider__text {
+    margin: 0;
+    font-size: $text-mobile-font-size;
+    padding-bottom: 45px;
+  }
+
+  .slider__toggle::before {
+    bottom: 32px;
+  }
+
+  .slider__toggle--prev::before {
+    right: 107px;
+  }
+
+  .slider__toggle--next::before {
+    right: 19px;
+  }
+
+  .slider__write {
+    padding-left: 34px;
+    padding-right: 36px;
+    height: 17px;
+    margin-top: 77px;
+  }
+}

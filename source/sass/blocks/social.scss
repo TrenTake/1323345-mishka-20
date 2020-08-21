@@ -32,3 +32,12 @@
   height: 20px;
   background-image: url("../img/icon-twitter.svg");
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 145px;
+    padding-top: 44px;
+    padding-bottom: 0;
+    width: 139px;
+  }
+}

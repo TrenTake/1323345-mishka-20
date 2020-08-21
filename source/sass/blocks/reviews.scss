@@ -2,6 +2,16 @@
   @include container;
 }
 
+.reviews::after {
+  background-image: url("../img/bg-zigzag-line.svg");
+  content: "";
+  display: block;
+  min-width: 320px;
+  height: 6px;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     background-image: url("../img/review@1x.jpg");
@@ -20,13 +30,22 @@
 @media (min-width: $desktop-width) {
   .reviews {
     background-image: none;
-    padding-bottom: 67px;
+    padding-bottom: 170px;
     padding-top: 90px;
+    position: relative;
   }
 
   .reviews__wrapper {
-    padding-left: 210px;
+    padding-left: 174px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+  }
+
+  .reviews::after {
+    min-width: 1052px;
+    height: 23px;
+    bottom: 0;
+    background-size: auto 21px;
+    position: absolute;
   }
 }
