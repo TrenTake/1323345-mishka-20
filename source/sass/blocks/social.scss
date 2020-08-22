@@ -2,8 +2,10 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  width: 260px;
-  margin-left: 30px;
+  width: 144px;
+  margin-left: 89px;
+  padding-top: 27px;
+  padding-bottom: 29px;
 }
 
 .social__link::before {
@@ -29,4 +31,13 @@
   width: 23px;
   height: 20px;
   background-image: url("../img/icon-twitter.svg");
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 145px;
+    padding-top: 44px;
+    padding-bottom: 0;
+    width: 139px;
+  }
 }

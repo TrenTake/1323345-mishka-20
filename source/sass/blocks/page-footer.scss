@@ -13,9 +13,21 @@
     justify-content: space-between;
     padding: 20px;
     margin-top: 57px;
+    min-width: 768px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    min-width: 1150px;
+  }
+
+  .page-footer__logo {
+    margin-left: 30px;
+    margin-top: 33px;
   }
 }

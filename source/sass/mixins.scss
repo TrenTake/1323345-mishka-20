@@ -15,20 +15,17 @@
 }
 
 @mixin container {
-  width: 320px;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    width: 768px;
     padding-left: 50px;
     padding-right: 50px;
   }
 
   @media (min-width: 1150px) {
-    width: 1150px;
     padding-left: 50px;
     padding-right: 50px;
   }

@@ -1,6 +1,10 @@
 .catalog__text {
   font-size: 13px;
   line-height: $basic-mobile-line-height;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 41px;
+  padding-left: 34px;
 }
 
 .catalog__write {
@@ -12,4 +16,149 @@
 
 .catalog__list {
   @include list-reset;
+}
+
+
+.catalog {
+  @include container;
+}
+
+.catalog__production {
+  position: relative;
+}
+
+.catalog__production-before {
+  margin: 0;
+  padding-top: 21.5px;
+  padding-bottom: 26.5px;
+  padding-left: 91px;
+}
+
+.catalog__production-before::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  width: 32px;
+  height: 32px;
+  background: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+}
+
+.catalog__player {
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 260px;
+  height: 150px;
+}
+
+.catalog__button {
+  border: none;
+}
+
+.catalog__button::before {
+  content: "";
+  width: 101px;
+  height: 77px;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.catalog__player-img {
+  position: absolute;
+  top: 35px;
+  left: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    display: flex;
+  }
+
+  .catalog__list {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog__player {
+    order: -1;
+  }
+
+  .catalog__production-before {
+    order: 0;
+  }
+
+  .catalog__text {
+    font-size: $basic-mobile-font-size;
+    line-height: $text-mobile-line-height;
+  }
+
+  .catalog__write {
+    padding-left: 207px;
+    padding-right: 207px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    display: block;
+    width: 314px;
+  }
+
+  .catalog__production {
+    display: flex;
+  }
+
+  .catalog__production-before {
+    padding-left: 0;
+  }
+
+  .catalog__text {
+    padding-left: 0;
+  }
+
+  .catalog__production-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 367px;
+    padding-left: 79px;
+  }
+
+  .catalog__write {
+    padding-left: 29px;
+    padding-right: 31px;
+  }
+
+  .catalog__player {
+    background-image: url("../img/video-desktop@1x.jpg");
+    width: 683px;
+    height: 455px;
+  }
+
+  .catalog__player-img {
+    top: 190px;
+    left: 300px;
+  }
+
+  .catalog__production-before::before {
+    left: auto;
+    right: 175px;
+    top: 0;
+  }
 }

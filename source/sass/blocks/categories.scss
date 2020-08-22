@@ -81,14 +81,21 @@
 
   .categories__container {
     width: 1150px;
+    padding-top: 242px;
   }
 
   .categories__link--items::after {
-    right: 110px;
+    right: 37px;
+    top: 29px;
   }
 
   .categories__link--toys::after {
-    right: 75px;
+    right: 34px;
+    top: 32px;
     left: auto;
+  }
+
+  .categories__text {
+    padding-left: 37px;
   }
 }
