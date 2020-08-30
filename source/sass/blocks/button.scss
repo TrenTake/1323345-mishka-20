@@ -5,4 +5,16 @@
   text-transform: uppercase;
   font-weight: $bold;
   background-color: $white;
+  width: 260px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 230px;
+  }
+
+  .button__slider {
+    width: 175px;
+  }
 }
