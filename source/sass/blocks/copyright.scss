@@ -4,12 +4,16 @@
   font-size: 19px;
   line-height: 18px;
   padding-right: 27px;
-  padding-left: 69px;
+  padding-left: 49px;
   padding-top: 6px;
 }
 
 .copyright__icon {
   padding-top: 15px;
+}
+
+.copyright__icon--form {
+  padding: 0;
 }
 
 .copyright__wrapper {
@@ -20,24 +24,34 @@
   border-top: 1px solid $border-footer-color;
 }
 
+.copyright__link {
+  margin-top: 15px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright__wrapper {
     border-top: none;
+    padding-top: 40px;
+    padding-right: 51px;
+  }
+
+  .copyright__wrapper--another {
+    padding-top: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright__wrapper {
-    padding-top: 27px;
-    padding-bottom: 20px;
-    padding-right: 71px;
+    padding-top: 42px;
+    padding-bottom: 50px;
+    padding-right: 52px;
+  }
+
+  .copyright__wrapper--another {
+    padding-top: 38px;
   }
 
   .copyright__text {
-    padding-top: 0;
-  }
-
-  .copyright__link {
-    margin-top: 6px;
+    padding-top: 3px;
   }
 }

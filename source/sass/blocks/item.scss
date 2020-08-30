@@ -3,11 +3,21 @@
   font-size: $text-mobile-font-size;
   line-height: $basic-mobile-line-height;
   font-weight: $bold;
+  margin-top: 25px;
+  margin-left: 27px;
+  margin-bottom: 0;
+
+  &--big-basket {
+    width: 200px;
+  }
 }
 
 .item__parameters {
   font-size: 13px;
   line-height: $text-mobile-line-height;
+  margin-top: 5px;
+  margin-left: 27px;
+  margin-bottom: 18px;
 }
 
 .item__price {
@@ -16,6 +26,9 @@
   line-height: $basic-mobile-line-height;
   font-size: $basic-mobile-font-size;
   margin: 0;
+  margin-left: 26px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .item__link {
@@ -24,6 +37,9 @@
 
 .item__icon {
   opacity: 0.2;
+  position: absolute;
+  right: 26px;
+  top: 22px;
 }
 
 .item__icon:hover {
@@ -38,11 +54,23 @@
 .item__container {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid $border-color;
+  position: relative;
 }
 
 .item {
   border: 1px solid $border-color;
   margin-bottom: 30px;
+}
+
+.item__name--production {
+  margin: 0;
+  order: -1;
+}
+
+.item__production {
+  margin-bottom: 57px;
+  padding-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,21 +109,56 @@
 
   .item__price {
     font-size: $text-mobile-font-size;
-    padding-bottom: 25.5px;
+    padding-bottom: 25px;
+    margin-left: -2px;
   }
 
   .item {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
+  }
+
+  .item__picture {
+    width: 334px;
+    height: 334px;
+  }
+
+  .item--toy {
+    margin-top: 79px;
+  }
+
+  .item__icon {
+    right: 2px;
+  }
+
+  .item__icon--basket {
+    right: -16px;
+  }
+
+  .item__icon--big-basket {
+    right: -27px;
+  }
+
+  .item__name--production {
+    padding-top: 40px;
+    padding-left: 106px;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .item__production {
+    padding-bottom: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .item {
     margin: 0;
+    box-sizing: border-box;
   }
 
   .item__wrapper {
     padding-left: 28px;
+    padding-right: 30px;
   }
 
   .item__parameters {
@@ -116,6 +179,38 @@
   }
 
   .item__production {
-    margin-top: 57px;
+    margin-top: 56px;
+    padding-bottom: 0;
+  }
+
+  .item__picture {
+    width: 316px;
+    height: 462px;
+  }
+
+  .item--toy {
+    margin-right: 49px;
+  }
+
+  .item--basket {
+    margin-right: 53px;
+  }
+
+  .item__name {
+    padding-top: 21px;
+    padding-right: 0;
+  }
+
+  .item__icon {
+    right: 0;
+  }
+
+  .item__container {
+    height: 73px;
+  }
+
+  .item__name--production {
+    padding-top: 96px;
+    padding-left: 78px;
   }
 }

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   width: 144px;
-  margin-left: 89px;
+  margin-left: 69px;
   padding-top: 27px;
   padding-bottom: 29px;
 }
@@ -33,11 +33,34 @@
   background-image: url("../img/icon-twitter.svg");
 }
 
+@media (min-width: $tablet-width) {
+  .social {
+    padding-top: 62px;
+    padding-bottom: 52px;
+    width: 141px;
+    margin-left: 4px;
+  }
+
+  .social--another {
+    padding-top: 55px;
+    padding-bottom: 57px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .social {
-    margin-left: 145px;
-    padding-top: 44px;
+    margin-left: 96px;
+    padding-top: 61px;
     padding-bottom: 0;
     width: 139px;
+  }
+
+  .social--catalog {
+    margin-left: 17px;
+  }
+
+  .social--another {
+    margin-left: 19px;
+    padding-top: 58px;
   }
 }

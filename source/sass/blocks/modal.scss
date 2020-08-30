@@ -3,10 +3,14 @@
   font-size: $title-mobile-font-size;
   line-height: $text-mobile-line-height;
   color: $black;
+  width: 150px;
+  text-align: center;
 }
 
 .modal__text {
   line-height: $text-mobile-line-height;
+  margin: 0;
+  text-align: center;
 }
 
 .modal__label {
@@ -17,8 +21,26 @@
 
 .modal__list {
   @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .modal__fieldset {
   border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.modal__button {
+  width: 260px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 18px;
+  color: $white;
+  background-color: $light-blue;
+  border: none;
+  margin-left: 30px;
+  margin-right: 30px;
 }

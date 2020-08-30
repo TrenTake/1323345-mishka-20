@@ -1,46 +1,55 @@
-.page-header__img-mobile {
-  margin-left: 89px;
-  padding-bottom: 17px;
-}
-
 .page-header {
   display: flex;
   flex-direction: column;
   position: relative;
 
   @include container;
-}
-
-.page-header__logo-mobile {
-  min-height: 44px;
-  padding-top: 22px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 320px;
 }
 
 .page-header__toggle {
-  background-image: url("../img/icon-menu-open.svg");
-  background-repeat: no-repeat;
-  position: absolute;
+  background-color: $white;
   top: 32px;
-  right: 0;
-  z-index: 2;
-  display: block;
+  margin-right: 29px;
   width: 20px;
   height: 14px;
+  display: block;
   cursor: pointer;
   border: none;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  background-image: url("../img/icon-menu-open.svg");
+}
+
+.page-header__toggle--closed {
+  background-image: url("../img/icon-menu-close.svg");
+  width: 21px;
+  height: 20px;
+  top: 29px;
+}
+
+.page-header__logo-img {
+  margin-left: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    min-height: 88px;
+    background-color: $white;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo-img {
+    width: 113px;
+    height: 46px;
+    margin: 0;
   }
 
   .page-header__toggle {
     display: none;
-  }
-
-  .page-header__img {
-    margin: 0;
   }
 
   .page-header {
@@ -48,22 +57,23 @@
     flex-direction: row;
     background: linear-gradient(to bottom, #ffffff 88px, #e0e0e0 88px, #e0e0e0 89px, #f9f9f9 89px);
     margin: 0;
-  }
-
-  .page-header__logo-mobile {
-    display: none;
-  }
-
-  .page-header__logo-tablet {
-    display: block;
-    min-width: 113px;
-  }
-
-  .page-header__logo-tablet:active {
-    opacity: 0.3;
+    padding-right: 0;
+    width: auto;
   }
 
   .page-header--another {
     background: linear-gradient(to bottom, #ffffff 88px, #e0e0e0 88px, #e0e0e0 89px, #f1f1f1 89px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .page-header__logo-img {
+    width: 136px;
+    height: 66px;
   }
 }
