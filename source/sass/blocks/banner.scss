@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
   min-width: 320px;
   min-height: 340px;
+
+  @media (min-resolution: $resolution) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 183%;
+  }
 }
 
 .banner__headline {
@@ -20,6 +25,11 @@
     min-width: 768px;
     background-image: url("../img/hero-tablet@1x.jpg");
     padding-bottom: 258px;
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 150%;
+    }
   }
 
   .banner__headline {
@@ -37,5 +47,10 @@
 
   .banner {
     min-height: 395px;
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 99%;
+    }
   }
 }

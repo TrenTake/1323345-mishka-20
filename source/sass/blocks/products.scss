@@ -79,6 +79,16 @@
   }
 }
 
+.products__order:hover {
+  background-color: $text-black;
+  color: $white;
+}
+
+.products__order:active {
+  color: $order-color;
+  background-color: $text-black;
+}
+
 @media (min-width: $tablet-width) {
   .products__name {
     margin: 0;

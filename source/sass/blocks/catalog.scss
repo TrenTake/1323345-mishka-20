@@ -2,8 +2,8 @@
   font-size: 13px;
   line-height: $basic-mobile-line-height;
   margin: 0;
-  padding-top: 35px;
-  padding-bottom: 41px;
+  padding-top: 185px;
+  padding-bottom: 58px;
   padding-left: 34px;
 }
 
@@ -46,9 +46,10 @@
 .catalog__player {
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
-  position: relative;
   width: 260px;
   height: 150px;
+  position: absolute;
+  top: 96px;
 }
 
 .catalog__button {
@@ -65,6 +66,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-size: 100%;
 }
 
 .catalog__player-img {
@@ -85,6 +87,28 @@
   flex-direction: column;
 }
 
+.catalog__wrapper {
+  order: -1;
+}
+
+.catalog__button:focus {
+  outline: none;
+}
+
+.catalog__write:hover,
+.catalog__write:active {
+  box-shadow: 0 1px 3px 1px;
+}
+
+.catalog__player:hover .catalog__button::before {
+  background-size: 102%;
+}
+
+.catalog__player:active .catalog__button::before {
+  opacity: 0.9;
+  background-size: 99%;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__item {
     display: flex;
@@ -92,6 +116,7 @@
   }
 
   .catalog__player {
+    position: static;
     order: -1;
     width: 668px;
     height: 455px;
@@ -100,6 +125,10 @@
 
   .catalog__production-before {
     order: 0;
+  }
+
+  .catalog__button::before {
+    top: 31%;
   }
 
   .catalog__text {
@@ -111,11 +140,11 @@
   }
 
   .catalog__write {
-    padding-left: 207px;
+    padding-left: 220px;
     box-sizing: border-box;
     margin-left: 41px;
     font-size: $text-mobile-font-size;
-    padding-right: 207px;
+    padding-right: 220px;
     width: 584px;
     min-height: 52px;
   }
@@ -125,14 +154,13 @@
     margin-bottom: 60px;
   }
 
-  .catalog__production-info {
-    display: flex;
-    flex-direction: column;
-  }
-
   .catalog__production-before::before {
     top: 33px;
     left: 41px;
+  }
+
+  .catalog__wrapper {
+    order: 0;
   }
 }
 
@@ -150,7 +178,6 @@
 
   .catalog__item {
     display: block;
-    width: 316px;
     box-sizing: border-box;
     height: auto;
   }
@@ -202,5 +229,10 @@
     display: flex;
     flex-direction: column;
     width: 310px;
+  }
+
+  .catalog__button::before {
+    top: 50%;
+    left: 109%;
   }
 }

@@ -50,6 +50,14 @@
   padding: 10px;
 }
 
+.slider__toggle:hover {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.3;
+}
+
 .slider__toggle--next {
   background-image: url("../img/icon-right-arrow.svg");
   left: auto;
