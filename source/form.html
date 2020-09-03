@@ -80,9 +80,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--color">
-          <legend class="form__field form__field--color">Цвет</legend>
-          <div class="form__container form__container--color">
+        <div class="form__fieldset-container">
+          <fieldset class="form__fieldset form__fieldset--color">
+            <legend class="form__field form__field--color">Цвет</legend>
             <ul class="form__list form__wrapper">
               <li class="form__item form__item--checkbox">
                 <input class="form__type" type="checkbox" name="white" id="white" value="white" checked>
@@ -109,25 +109,23 @@
                 <label for="orange" class="form__label form__label--checkbox">Оранжевый</label>
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--name">
           <legend class="form__field form__field--name">ФИО</legend>
-          <div class="form__container form__container--name">
-            <div class="form__list form__list--name">
-              <p class="form__name">
-                <label for="name" class="form__label form__label--name">Имя:</label>
-                <input class="form__text form__text--name" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
-              </p>
-              <p class="form__name">
-                <label for="surname" class="form__label form__label--name">Фамилия:</label>
-                <input class="form__text form__text--name form__text--surname" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
-              </p>
-              <p class="form__name">
-                <label for="patronymic" class="form__label form__label--name">Отчество</label>
-                <input class="form__text form__text--name form__text--name-patronymic" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
-              </p>
-            </div>
+          <div class="form__list form__list--name">
+            <p class="form__name">
+              <label for="name" class="form__label form__label--name">Имя:</label>
+              <input class="form__text form__text--name" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+            </p>
+            <p class="form__name">
+              <label for="surname" class="form__label form__label--name">Фамилия:</label>
+              <input class="form__text form__text--name form__text--surname" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
+            </p>
+            <p class="form__name">
+              <label for="patronymic" class="form__label form__label--name">Отчество</label>
+              <input class="form__text form__text--name form__text--name-patronymic" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+            </p>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--info">

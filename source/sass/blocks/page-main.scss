@@ -39,7 +39,7 @@
     height: 25px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-size: 97%;
+    background-size: 100% 100%;
   }
 
   .page-main__headline--catalog {
@@ -81,8 +81,10 @@
   .page-main__wrapper::after {
     width: 100%;
     left: 0;
-    height: 37px;
-    background-size: 110%;
+    bottom: -15px;
+    height: 34px;
+    background-size: auto 36px;
+    background-position-x: 30px;
   }
 
   .page-main__headline--catalog::after {
@@ -92,8 +94,8 @@
   }
 
   .page-main__wrapper {
-    padding-bottom: 9px;
     overflow: hidden;
+    height: 700px;
   }
 
   .page-main__headline {

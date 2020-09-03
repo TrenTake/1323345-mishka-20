@@ -297,7 +297,9 @@
     transform: translateX(-19%);
     padding-right: 0;
     order: 0;
-    padding-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    padding-left: 43px;
   }
 
   .main-nav__item--search {
@@ -316,6 +318,7 @@
 
   .main-nav__item--tablet {
     order: 6;
+    padding-right: 52px;
     padding-top: 12px;
   }
 
@@ -374,6 +377,6 @@
 
   .main-nav__list--user {
     width: 349px;
-    padding-right: 50px;
+    padding-right: 51px;
   }
 }

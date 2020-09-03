@@ -23,10 +23,12 @@
 .contacts__write {
   padding-left: 49px;
   padding-right: 50px;
-  padding-top: 12px;
-  padding-bottom: 11px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   font-size: 18px;
   margin-left: 30px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -34,10 +36,6 @@
 }
 
 .contacts__map {
-  margin-bottom: 8px;
-}
-
-#map {
   width: 320px;
   height: 454px;
   margin-bottom: 42px;
@@ -127,7 +125,10 @@
   }
 
   .contacts__map {
-    margin-bottom: 12px;
+    margin-bottom: 23px;
+    width: 768px;
+    padding-bottom: 32px;
+    height: 457px;
   }
 
   .contacts__text {
@@ -136,15 +137,12 @@
     margin-top: 22px;
   }
 
-  #map {
-    width: 768px;
-    padding-bottom: 32px;
-  }
-
   .contacts__write {
     margin-left: 269px;
-    padding-left: 36px;
-    padding-right: 42px;
+    width: 230px;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
     font-size: $text-mobile-font-size;
   }
 
@@ -159,10 +157,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  #map {
+  .contacts__map {
     width: 527px;
     background-size: 527px auto;
-    min-height: 457px;
+    height: 457px;
     position: absolute;
     right: 50px;
     top: 62px;
@@ -173,7 +171,7 @@
     flex-direction: column;
     padding-left: 198px;
     padding-top: 13px;
-    padding-bottom: 90px;
+    padding-bottom: 85px;
     margin-bottom: 0;
   }
 
@@ -213,10 +211,6 @@
 
   .contacts__write {
     margin-left: 224px;
-    padding-left: 41px;
-    padding-right: 38px;
-    padding-bottom: 12px;
-    padding-top: 13px;
     font-size: $text-mobile-font-size;
   }
 

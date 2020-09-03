@@ -336,12 +336,7 @@
     margin-right: 0;
   }
 
-  .form__container {
-    display: flex;
-    padding-bottom: 36px;
-  }
-
-  .form__container--color {
+  .fieldset__fieldset--color {
     padding-top: 66px;
     width: 553px;
     margin: 0 auto;
@@ -363,6 +358,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-top: 66px;
+    padding-left: 217px;
   }
 
   .form__send {
@@ -404,6 +401,7 @@
     padding-right: 124px;
     position: absolute;
     top: 67px;
+    left: 0;
   }
 
   .form__field--name {
@@ -484,10 +482,6 @@
     font-size: 19px;
   }
 
-  .form__container--name {
-    padding-bottom: 0;
-  }
-
   .form__fieldset--name {
     margin-bottom: 0;
   }
@@ -540,8 +534,11 @@
     margin-left: 219px;
   }
 
-  .form__fieldset--color {
+  .form__fieldset-container {
+    background-color: $gray;
     position: relative;
+    width: 100%;
+    min-height: 305px;
   }
 }
 
@@ -552,11 +549,6 @@
   }
 
   .form__list--type {
-    margin-left: 226px;
-  }
-
-  .form__container--color {
-    width: 1150px;
     margin-left: 226px;
   }
 
@@ -579,7 +571,8 @@
 
   .form__field {
     padding-right: 79px;
-    padding-left: 111px;
+    margin-left: 111px;
+    padding-left: 0;
     padding-top: 30px;
   }
 
@@ -640,8 +633,10 @@
   }
 
   .form__field--tel {
-    padding-top: 68px;
-    padding-right: 57px;
+    margin-top: 68px;
+    margin-right: 57px;
+    padding-top: 0;
+    padding-right: 0;
   }
 
   .form__text--name-tel {
@@ -652,7 +647,9 @@
   }
 
   .form__field--email {
-    padding-top: 39px;
+    margin-top: 39px;
+    padding-top: 0;
+    padding-left: 0;
     padding-right: 0;
   }
 
@@ -697,7 +694,7 @@
   }
 
   .form__fieldset--color {
-    background-color: $gray;
-    width: 100%;
+    padding-top: 66px;
+    min-height: 225px;
   }
 }
