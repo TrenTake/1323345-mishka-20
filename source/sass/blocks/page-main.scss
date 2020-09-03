@@ -40,6 +40,7 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: 100% 100%;
+    background-position: bottom;
   }
 
   .page-main__headline--catalog {
@@ -81,8 +82,8 @@
   .page-main__wrapper::after {
     width: 100%;
     left: 0;
-    bottom: -15px;
-    height: 34px;
+    bottom: -17px;
+    height: 37px;
     background-size: auto 36px;
     background-position-x: 30px;
   }
