@@ -5,18 +5,27 @@
   color: $black;
   width: 150px;
   text-align: center;
+  text-transform: uppercase;
+  padding-top: 32px;
+  padding-bottom: 14px;
 }
 
 .modal__text {
   line-height: $text-mobile-line-height;
   margin: 0;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .modal__label {
   font-weight: $bold;
   font-size: $text-mobile-font-size;
   line-height: 16px;
+  border: 2px solid $border-color;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .modal__list {
@@ -25,6 +34,9 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  width: 260px;
+  padding-left: 30px;
+  padding-top: 18px;
 }
 
 .modal__fieldset {
@@ -35,12 +47,91 @@
 
 .modal__button {
   width: 260px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  font-size: 18px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: $text-mobile-font-size;
   color: $white;
   background-color: $light-blue;
   border: none;
   margin-left: 30px;
   margin-right: 30px;
+  margin-top: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.modal__type {
+  display: none;
+}
+
+.modal__label:hover {
+  border-color: $line-color;
+}
+
+.modal__label:active {
+  border-color: $text-black;
+}
+
+.modal__item {
+  width: 82px;
+  height: 52px;
+}
+
+.modal {
+  width: 320px;
+  box-sizing: border-box;
+  height: 336px;
+  border-top: 1px solid $border-color;
+  box-shadow: 5px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  display: none;
+  z-index: 9999;
+}
+
+.modal--show {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 556px;
+    margin-left: 0 auto;
+    box-shadow: 0 0 15px 2px;
+  }
+
+  .modal__name {
+    width: 400px;
+    font-size: 30px;
+    padding-top: 49px;
+    padding-bottom: 23px;
+  }
+
+  .modal__text {
+    font-size: $text-mobile-font-size;
+  }
+
+  .modal__label {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  .modal__list {
+    width: 325px;
+    padding-left: 106px;
+  }
+
+  .modal__item {
+    width: 113px;
+    margin-right: 9px;
+  }
+
+  .modal__button {
+    margin-left: 103px;
+    padding-left: 5px;
+    width: 350px;
+    padding-bottom: 16px;
+  }
 }

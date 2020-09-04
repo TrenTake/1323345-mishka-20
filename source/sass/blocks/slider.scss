@@ -24,7 +24,9 @@
   padding-left: 78px;
   padding-right: 77px;
   padding-top: 14px;
-  padding-bottom: 9px;
+  padding-bottom: 14px;
+  display: block;
+  box-sizing: border-box;
 }
 
 .slider__item {
@@ -37,17 +39,24 @@
 }
 
 .slider__toggle {
-  width: 50px;
-  height: 26px;
+  width: 50%;
+  height: 52px;
   border: 1px solid $border-color;
   background-color: $white;
   background-repeat: no-repeat;
-  position: absolute;
   display: block;
   bottom: 70px;
   background-image: url("../img/icon-left-arrow.svg");
-  left: 38px;
   padding: 10px;
+  background-position: 36px;
+}
+
+.slider__toggle:hover {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.3;
 }
 
 .slider__toggle--next {
@@ -57,11 +66,14 @@
 }
 
 .slider__list {
-  margin-bottom: 139px;
+  margin-bottom: 31px;
 }
 
 .slider__toggle-wrapper {
   position: relative;
+  width: 260px;
+  margin-bottom: 39px;
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
@@ -71,14 +83,20 @@
 
   .slider__toggle-wrapper {
     position: static;
+    display: block;
+    margin-bottom: 0;
+    width: auto;
   }
 
   .slider__toggle {
     order: 3;
     border: none;
-    bottom: 169px;
+    bottom: 35px;
     right: 107px;
     left: auto;
+    width: 51px;
+    position: absolute;
+    background-position: inherit;
   }
 
   .slider__toggle--next {
@@ -114,7 +132,7 @@
   .slider__title {
     margin: 0;
     padding-top: 77px;
-    padding-bottom: 36px;
+    padding-bottom: 0;
   }
 
   .slider__author-pseudonym {
@@ -134,7 +152,11 @@
   }
 
   .slider__toggle {
-    bottom: 149px;
+    bottom: 130px;
+  }
+
+  .slider__list {
+    margin-bottom: 111px;
   }
 
   .slider__write {

@@ -2,7 +2,7 @@
   @include container;
 
   position: relative;
-  padding-bottom: 65px;
+  padding-bottom: 50px;
   width: 320px;
 }
 
@@ -25,7 +25,12 @@
     background-repeat: no-repeat;
     width: 768px;
     margin-top: 24px;
-    padding-bottom: 0;
+    padding-bottom: 108px;
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 46%;
+    }
   }
 
   .reviews__wrapper {
@@ -47,17 +52,24 @@
 @media (min-width: $desktop-width) {
   .reviews {
     background-image: none;
-    padding-bottom: 54px;
     padding-top: 90px;
     position: relative;
 
     @include container;
+
+    padding-bottom: 46px;
   }
 
   .reviews__wrapper {
     padding-left: 174px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    min-height: 500px;
+
+    @media (min-resolution: $resolution) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 33%;
+    }
   }
 
   .reviews::after {

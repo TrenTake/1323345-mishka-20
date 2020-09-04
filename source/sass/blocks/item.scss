@@ -60,7 +60,9 @@
 
 .item {
   border: 1px solid $border-color;
+  margin: 0 auto;
   margin-bottom: 30px;
+  width: 258px;
 }
 
 .item__name--production {
@@ -70,7 +72,26 @@
 
 .item__production {
   margin-bottom: 57px;
-  padding-bottom: 31px;
+  padding-bottom: 47px;
+}
+
+.item:hover .item__wrapper,
+.item:active .item__wrapper {
+  box-shadow: 0 5px 5px rgba(122, 122, 122, 0.2);
+}
+
+.item__link:hover {
+  opacity: 0.6;
+}
+
+.item__link:active {
+  opacity: 0.3;
+}
+
+.item__button {
+  border: none;
+  background-color: $white;
+  outline: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -115,6 +136,7 @@
 
   .item {
     margin-bottom: 52px;
+    width: auto;
   }
 
   .item__picture {
@@ -146,7 +168,7 @@
   }
 
   .item__production {
-    padding-bottom: 46px;
+    padding-bottom: 61px;
   }
 }
 
@@ -154,6 +176,7 @@
   .item {
     margin: 0;
     box-sizing: border-box;
+    width: 316px;
   }
 
   .item__wrapper {

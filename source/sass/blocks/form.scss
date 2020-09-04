@@ -7,6 +7,11 @@
   padding-bottom: 29px;
 }
 
+.form__end {
+  margin: 0 auto;
+  width: 270px;
+}
+
 .form__name {
   margin: 0;
 }
@@ -28,7 +33,7 @@
   padding-bottom: 10px;
   padding-top: 16px;
   margin-bottom: 23px;
-  width: 100%;
+  width: 260px;
   font-size: 18px;
   line-height: 18px;
   border-bottom: 2px solid $black;
@@ -54,12 +59,19 @@
   background: $light-blue;
 }
 
+.form__field--email::after {
+  left: 80px;
+  width: 180px;
+}
+
 .form__label {
   color: $black;
   font-weight: $bold;
   font-size: $text-mobile-font-size;
   line-height: 18px;
   min-height: 41px;
+  width: 140px;
+  margin-right: 77px;
 }
 
 .form__send {
@@ -87,13 +99,15 @@
 
 .form__necessarily {
   font-size: 14px;
+  width: 258px;
   line-height: 16px;
 }
 
 .form__fieldset {
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 260px;
 }
 
 .form__fieldset--name {
@@ -135,6 +149,7 @@
 
 .form__contacts {
   position: relative;
+  width: 258px;
 }
 
 .form__contacts--email::after {
@@ -221,6 +236,26 @@
   padding-top: 11px;
 }
 
+.form__type:hover + .form__label--radio::before,
+.form__type:hover + .form__label--checkbox::before {
+  border-color: $line-color;
+}
+
+.form__type:active + .form__label--radio::before,
+.form__type:hover + .form__label--checkbox::before {
+  border-color: $border-color;
+}
+
+.form__text:hover {
+  border-color: $line-color;
+}
+
+.form__text--name-tel:hover + .form__icon-tel,
+.form__text--name-tel:active + .form__icon-tel {
+  fill: $line-color;
+  opacity: 1;
+}
+
 @media (min-width: $tablet-width) {
   .form__text {
     font-size: $text-mobile-font-size;
@@ -231,9 +266,10 @@
     padding-bottom: 53px;
   }
 
-  .form__fieldset--color {
-    background-color: $gray;
-    width: 100%;
+  .form__contacts {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .form__icon-tel {
@@ -289,19 +325,22 @@
     margin: 0 auto;
   }
 
-  .form__label {
-    font-size: 19px;
-  }
-
-  .form__container {
+  .form__fieldset--type {
     display: flex;
     padding-bottom: 36px;
   }
 
-  .form__container--color {
+  .form__label {
+    font-size: 19px;
+    width: auto;
+    margin-right: 0;
+  }
+
+  .fieldset__fieldset--color {
     padding-top: 66px;
-    width: 768px;
+    width: 553px;
     margin: 0 auto;
+    margin-left: 217px;
     padding-bottom: 11px;
   }
 
@@ -319,6 +358,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-top: 66px;
+    padding-left: 217px;
   }
 
   .form__send {
@@ -332,7 +373,6 @@
 
   .form__end {
     display: flex;
-    margin: 0 auto;
     width: 768px;
   }
 
@@ -350,7 +390,7 @@
 
   .form__item--acces,
   .form__item--toys {
-    width: 100%;
+    width: 400px;
     padding-left: 77px;
     padding-bottom: 8px;
     padding-top: 27px;
@@ -359,11 +399,15 @@
   .form__field--color {
     padding-top: 0;
     padding-right: 124px;
+    position: absolute;
+    top: 67px;
+    left: 0;
   }
 
   .form__field--name {
     padding-top: 67px;
     padding-right: 124px;
+    position: absolute;
   }
 
   .form__text--name {
@@ -383,6 +427,7 @@
 
   .form__list--name {
     padding-top: 60px;
+    margin-left: 216px;
   }
 
   .form__text--name-patronymic {
@@ -390,10 +435,6 @@
     padding-top: 1px;
     padding-left: 16px;
     width: 358px;
-  }
-
-  .form__contacts {
-    display: flex;
   }
 
   .form__field--tel {
@@ -441,10 +482,6 @@
     font-size: 19px;
   }
 
-  .form__container--name {
-    padding-bottom: 18px;
-  }
-
   .form__fieldset--name {
     margin-bottom: 0;
   }
@@ -452,12 +489,13 @@
   .form__contacts--add {
     background-color: $white;
     padding-top: 51px;
-    margin: 0 auto;
+    width: 768px;
   }
 
   .form__necessarily {
     font-size: $text-mobile-font-size;
     margin: 0;
+    width: auto;
     padding-top: 70px;
     padding-left: 137px;
   }
@@ -468,18 +506,39 @@
   }
 
   .form__fieldset--info {
-    padding-top: 30px;
+    padding-top: 19px;
     width: 100%;
   }
 
-  .form__list--tel {
+  .form__list-wrapper {
     width: 768px;
     margin: 0 auto;
   }
 
-  .form__list-wrapper {
+  .form__list--tel {
     background-color: $gray;
+    padding-top: 29px;
     width: 100%;
+  }
+
+  .form__add-wrapper {
+    width: 100%;
+    background-color: $white;
+  }
+
+  .form__field--absolute {
+    position: absolute;
+  }
+
+  .form__list--type {
+    margin-left: 219px;
+  }
+
+  .form__fieldset-container {
+    background-color: $gray;
+    position: relative;
+    width: 100%;
+    min-height: 305px;
   }
 }
 
@@ -489,8 +548,8 @@
     height: 149px;
   }
 
-  .form__container--color {
-    width: 1150px;
+  .form__list--type {
+    margin-left: 226px;
   }
 
   .form__text {
@@ -512,7 +571,8 @@
 
   .form__field {
     padding-right: 79px;
-    padding-left: 111px;
+    margin-left: 111px;
+    padding-left: 0;
     padding-top: 30px;
   }
 
@@ -536,10 +596,13 @@
 
   .form__list--name {
     padding-top: 0;
+    margin-left: 227px;
   }
 
   .form__list--tel {
-    width: 1150px;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 18px;
   }
 
   .form__text--name {
@@ -566,11 +629,14 @@
 
   .form__fieldset--info {
     padding-top: 0;
+    width: 100%;
   }
 
   .form__field--tel {
-    padding-top: 68px;
-    padding-right: 57px;
+    margin-top: 68px;
+    margin-right: 57px;
+    padding-top: 0;
+    padding-right: 0;
   }
 
   .form__text--name-tel {
@@ -581,7 +647,9 @@
   }
 
   .form__field--email {
-    padding-top: 39px;
+    margin-top: 39px;
+    padding-top: 0;
+    padding-left: 0;
     padding-right: 0;
   }
 
@@ -625,8 +693,8 @@
     padding-left: 169px;
   }
 
-  .form__fieldset--info,
   .form__fieldset--color {
-    width: 100%;
+    padding-top: 66px;
+    min-height: 225px;
   }
 }
