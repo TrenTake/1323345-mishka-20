@@ -132,7 +132,7 @@
   .slider__title {
     margin: 0;
     padding-top: 77px;
-    padding-bottom: 36px;
+    padding-bottom: 0;
   }
 
   .slider__author-pseudonym {
@@ -152,7 +152,11 @@
   }
 
   .slider__toggle {
-    bottom: 18px;
+    bottom: 130px;
+  }
+
+  .slider__list {
+    margin-bottom: 111px;
   }
 
   .slider__write {

@@ -57,13 +57,14 @@
 
     @include container;
 
-    padding-bottom: 160px;
+    padding-bottom: 46px;
   }
 
   .reviews__wrapper {
     padding-left: 174px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    min-height: 500px;
 
     @media (min-resolution: $resolution) {
       background-image: url("../img/review@2x.jpg");

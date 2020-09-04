@@ -88,6 +88,12 @@
   opacity: 0.3;
 }
 
+.item__button {
+  border: none;
+  background-color: $white;
+  outline: none;
+}
+
 @media (min-width: $tablet-width) {
   .item__name {
     font-size: $font-size-name-catalog;
