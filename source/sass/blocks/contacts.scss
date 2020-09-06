@@ -72,8 +72,8 @@
 
 .contacts__text--email-link {
   color: $text-black;
-  text-decoration: underline;
-  text-decoration-color: $link-color;
+  border-bottom: 1px solid $link-color;
+  height: 29px;
 }
 
 .contacts__text--email-link:hover {
@@ -81,7 +81,7 @@
 }
 
 .contacts__text--email-link:active {
-  text-decoration: none;
+  border-bottom: none;
   color: $link-color;
 }
 
