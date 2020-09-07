@@ -10,6 +10,7 @@
 
 .copyright__icon {
   padding-top: 15px;
+  fill: $light-blue;
 }
 
 .copyright__icon--form {
@@ -26,6 +27,15 @@
 
 .copyright__link {
   margin-top: 15px;
+}
+
+.copyright__icon:hover {
+  fill: $light-blue;
+}
+
+.copyright__icon:active {
+  fill: $light-blue;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

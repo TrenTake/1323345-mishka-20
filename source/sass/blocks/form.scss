@@ -546,6 +546,8 @@
   .form__wrapper {
     width: 830px;
     height: 149px;
+    padding-top: 0;
+    padding-left: 225px;
   }
 
   .form__list--type {
@@ -695,6 +697,10 @@
 
   .form__fieldset--color {
     padding-top: 66px;
+    position: relative;
+  }
+
+  .form__fieldset-container {
     min-height: 225px;
   }
 }
