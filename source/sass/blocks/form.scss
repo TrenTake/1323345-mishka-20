@@ -256,6 +256,16 @@
   opacity: 1;
 }
 
+.form__send:hover {
+  background-color: $text-black;
+  color: $white;
+}
+
+.form__send:active {
+  color: $order-color;
+  background-color: $text-black;
+}
+
 @media (min-width: $tablet-width) {
   .form__text {
     font-size: $text-mobile-font-size;

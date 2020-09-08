@@ -76,6 +76,16 @@
   display: flex;
 }
 
+.slider__write:hover {
+  background-color: $text-black;
+  color: $white;
+}
+
+.slider__write:active {
+  color: $order-color;
+  background-color: $text-black;
+}
+
 @media (min-width: $tablet-width) {
   .slider__list {
     order: 2;

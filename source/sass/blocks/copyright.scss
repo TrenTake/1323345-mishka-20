@@ -3,7 +3,7 @@
   font-weight: $bold;
   font-size: 19px;
   line-height: 18px;
-  padding-right: 27px;
+  padding-right: 19px;
   padding-left: 49px;
   padding-top: 6px;
 }
@@ -11,6 +11,8 @@
 .copyright__icon {
   padding-top: 15px;
   fill: $light-blue;
+  width: 45px;
+  height: 42px;
 }
 
 .copyright__icon--form {
@@ -26,7 +28,7 @@
 }
 
 .copyright__link {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .copyright__icon:hover {
@@ -42,11 +44,19 @@
   .copyright__wrapper {
     border-top: none;
     padding-top: 40px;
-    padding-right: 51px;
+    padding-right: 41px;
   }
 
   .copyright__wrapper--another {
     padding-top: 34px;
+  }
+
+  .copyright__link {
+    margin-top: 12px;
+  }
+
+  .copyright__text {
+    padding-right: 20px;
   }
 }
 
@@ -54,7 +64,6 @@
   .copyright__wrapper {
     padding-top: 42px;
     padding-bottom: 50px;
-    padding-right: 52px;
   }
 
   .copyright__wrapper--another {
