@@ -17,6 +17,15 @@
   margin-top: 37px;
 }
 
+.page-footer__logo:hover {
+  fill: $line-color;
+}
+
+.page-footer__logo:active {
+  fill: $line-color;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
@@ -59,6 +68,6 @@
   }
 
   .page-footer__wrapper--catalog {
-    margin-top: 101px;
+    margin-top: 0;
   }
 }

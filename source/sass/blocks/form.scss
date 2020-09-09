@@ -256,6 +256,16 @@
   opacity: 1;
 }
 
+.form__send:hover {
+  background-color: $text-black;
+  color: $white;
+}
+
+.form__send:active {
+  color: $order-color;
+  background-color: $text-black;
+}
+
 @media (min-width: $tablet-width) {
   .form__text {
     font-size: $text-mobile-font-size;
@@ -546,6 +556,8 @@
   .form__wrapper {
     width: 830px;
     height: 149px;
+    padding-top: 0;
+    padding-left: 225px;
   }
 
   .form__list--type {
@@ -695,6 +707,10 @@
 
   .form__fieldset--color {
     padding-top: 66px;
+    position: relative;
+  }
+
+  .form__fieldset-container {
     min-height: 225px;
   }
 }

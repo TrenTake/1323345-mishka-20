@@ -50,6 +50,14 @@
   margin-top: -58px;
 }
 
+.categories__link:hover {
+  margin-top: -5px;
+}
+
+.categories__link:hover .categories__link::after {
+  opacity: 1;
+}
+
 @media (min-width: $tablet-width) {
   .categories__container {
     display: flex;
@@ -94,7 +102,6 @@
 
   .categories__link--items::after {
     right: 37px;
-    top: 29px;
   }
 
   .categories__link--toys::after {

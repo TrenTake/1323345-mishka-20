@@ -85,6 +85,16 @@
   color: $link-color;
 }
 
+.contacts__write:hover {
+  background-color: $text-black;
+  color: $white;
+}
+
+.contacts__write:active {
+  color: $order-color;
+  background-color: $text-black;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__title {
     font-size: $title-tablet-font-size;
