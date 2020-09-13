@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <meta name="description" content="Магазин милых штук ручной работы Mishka">
     <meta name="keywords" content="вещи, детские игрушки, предметы интерьера, вязаные корзинки, экологические материалы">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +13,7 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav main-nav--hide main-nav--nojs">
-        <button class="page-header__toggle" type="button" aria-label="Кнопка открытия меню"></button>
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия меню"></button>
         <div class="main-nav__item main-nav__item--logo">
           <a class="page-header__logo" aria-label="Логотип магазина MISHKA">
             <picture class="page-header__img">
@@ -99,6 +101,9 @@
             </tr>
           </table>
           <picture class="products__image-options">
+            <source class="products__image" type="image/webp" media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.webp 1x, ./img/triple-set-desktop@2x.webp 2x">
+            <source class="products__image" type="image/webp" media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.webp 1x, ./img/triple-set-tablet@2x.webp 2x">
+            <source class="products__image" type="image/webp" srcset="./img/triple-set-mobile@1x.webp 1x, ./img/triple-set-mobile@2x.webp 2x">
             <source class="products__image" media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
             <source class="products__image" media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
             <img class="products__image" src="./img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" srcset="./img/triple-set-mobile@1x.jpg 1x, ./img/triple-set-mobile@2x.jpg 2x" width="260" height="315">

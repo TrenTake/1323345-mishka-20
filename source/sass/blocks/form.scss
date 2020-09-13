@@ -188,7 +188,7 @@
 }
 
 .form__type {
-  display: none;
+  @include visually-hidden;
 }
 
 .form__label--checkbox::before {
@@ -242,8 +242,13 @@
 }
 
 .form__type:active + .form__label--radio::before,
-.form__type:hover + .form__label--checkbox::before {
+.form__type:active + .form__label--checkbox::before {
   border-color: $border-color;
+}
+
+.form__type:focus + .form__label--radio::before,
+.form__type:focus + .form__label--checkbox::before {
+  border-color: $focus-blue;
 }
 
 .form__text:hover {
@@ -555,7 +560,6 @@
 @media (min-width: $desktop-width) {
   .form__wrapper {
     width: 830px;
-    height: 149px;
     padding-top: 0;
     padding-left: 225px;
   }

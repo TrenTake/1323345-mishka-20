@@ -1,5 +1,5 @@
 var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.page-header__toggle');
+var navToggle = document.querySelector('.main-nav__toggle');
 const modal = document.querySelector(".modal");
 const button = document.querySelector(".products__order");
 const productButtons = document.querySelectorAll(".item__button");
@@ -17,7 +17,7 @@ navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function() {
     navMain.classList.toggle('main-nav--hide');
-    navToggle.classList.toggle('page-header__toggle--closed')
+    navToggle.classList.toggle('main-nav__toggle--closed')
 });
 
 if (button) {

@@ -17,6 +17,10 @@
   opacity: 0.3;
 }
 
+.social__item:not(:last-child) {
+  margin-right: 39px;
+}
+
 @media (min-width: $tablet-width) {
   .social {
     padding-top: 62px;
